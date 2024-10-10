@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingLab - Login</title>
+    <link rel="stylesheet" href="LoginPage.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Voting Registration Form</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="login-btn">Login</button>
+        </nav>
+    </header>
+    
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Enter your email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Enter your password</label>
+                </div>
+                <div class="options">
+                    <label><input type="checkbox" name="remember"> Remember me</label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="login-submit">Login Now</button>
+            </form>
+            <div class="separator">
+                <span>or</span>
+            </div>
+            <div id="g_id_onload"
+            data-context="signin"
+            data-ux_mode="popup"
+            data-callback="handleCredentialResponse"
+            data-auto_prompt="false">
+            data-client_id="YOUR_GOOGLE_CLIENT_ID"
+            </div>
+            <div class="g_id_signin"
+            data-shape="rectangular"
+            data-theme="outline"
+            data-text="signin_with"
+            data-size="large"
+            data-logo_alignment="left">
+            data-type="standard"
+            </div>
+            <p class="signup-link">Not a member? <a href="#">Signup Now</a></p>
+        </div>
+    </div>
+    <script src="LoginPage.js"></script>
+</body>
+</html>

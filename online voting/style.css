@@ -1,0 +1,117 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    background-image: url(https://cdn-attachments.timesofmalta.com/f8e7921e015c7d265c207ea9c51dc97c96ab8e18-1577000925-5dff1fdd-1920x1280.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 60px;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav__logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav__links {
+    display: flex;
+    list-style: none;
+}
+
+.nav__links li {
+    margin-left: 1.5rem;
+}
+
+.nav__links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav__login {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.form__title {
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form { 
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form__group {
+    margin-bottom: 1rem;
+}
+
+.form__group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form__group input,
+.form__group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form__submit {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form__submit:hover {
+    background-color: #218838;
+}
